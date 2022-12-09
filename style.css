@@ -1,0 +1,112 @@
+body {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+
+.gameSection {
+  min-width: 100%;
+  min-height: 100%;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+
+.gameContainer {
+  position: relative;
+  width: 450px;
+  height: 400px;
+  overflow: hidden;
+  background-size: contain;
+}
+
+.sewingThimble {
+  background: url(img/thimble.png) no-repeat fixed center;
+  background-size: cover;
+  border: none;
+  position: absolute;
+  top: 100px;
+  z-index: 4;
+  width: 130px;
+  height: 145px;
+  font-size: inherit;
+  will-change: transform, top, left;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.thimble0 {
+  left: 0px;
+}
+
+.thimble1 {
+  left: 160px;
+}
+
+.thimble2 {
+  left: 320px;
+}
+
+.thimbleUp {
+  transform: translateY(-50px);
+}
+
+.thimbleBallPosition0 {
+  background: url(img/ball.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  left: 40px;
+  top: 195px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.thimbleBallPosition1 {
+  background: url(img/ball.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  left: 200px;
+  top: 195px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.thimbleBallPosition2 {
+  background: url(img/ball.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  left: 360px;
+  top: 195px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.playButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.playButton {
+  cursor: default;
+  border: 2px solid #81838d;
+  pointer-events: all;
+  cursor: pointer;
+  min-width: 200px;
+  border-radius: 4px;
+  background: #ecf3de;
+  text-align: center;
+  font-size: large;
+  padding: 10px;
+}
